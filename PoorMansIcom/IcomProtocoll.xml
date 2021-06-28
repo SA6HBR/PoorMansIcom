@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hamradio>
+  <Command code="03" name="Read the operating frequency" subCommands="No" ReadFrom="05" FixedSize="0" />
+  <!--
+	Icom sending FE FE 38 E0 03 FD to get frequency that is set on 05 and you set this with ReadFrom="05"	
+  -->
+  <Command code="04" name="Read the operating mode" subCommands="No" ReadFrom="06" FixedSize="0" />
+  <Command code="05" name="Set the operating frequency" subCommands="No" ReadFrom="05" FixedSize="10">
+    <!--
+	Get FE FE E0 38 03 00 10 55 04 00 FD
+	Set FE FE 38 E0 05 00 10 55 04 FD
+	
+	Program not always send all five position in frequency, so you have to set char lenght on this with FixedSize="10"
+  -->
+    <RadioValue code="0040101800" />
+  </Command>
+  <Command code="06" name="Set the operating mode" subCommands="No" ReadFrom="06" FixedSize="0">
+    <RadioValue code="01" />
+  </Command>
+  <Command code="16" name="Div" subCommands="Yes" ReadFrom="16" FixedSize="0">
+    <SubCommand code="02" PreFix="02">
+      <RadioValue code="0202" />
+    </SubCommand>
+    <SubCommand code="41" PreFix="41">
+      <RadioValue code="4100" />
+    </SubCommand>
+    <SubCommand code="48" PreFix="48">
+      <RadioValue code="4800" />
+    </SubCommand>
+    <SubCommand code="22" PreFix="22">
+      <RadioValue code="2200" />
+    </SubCommand>
+    <SubCommand code="40" PreFix="40">
+      <RadioValue code="4001" />
+    </SubCommand>
+    <SubCommand code="44" PreFix="44">
+      <RadioValue code="4400" />
+    </SubCommand>
+    <SubCommand code="12" PreFix="12">
+      <RadioValue code="1202" />
+    </SubCommand>
+    <SubCommand code="46" PreFix="46">
+      <RadioValue code="4601" />
+    </SubCommand>
+    <SubCommand code="5A" PreFix="5A">
+      <RadioValue code="5A0000" />
+    </SubCommand>
+    <SubCommand code="4E" PreFix="4E">
+      <RadioValue code="4E00" />
+    </SubCommand>
+    <SubCommand code="47" PreFix="47">
+      <RadioValue code="4702" />
+    </SubCommand>
+    <SubCommand code="51" PreFix="51">
+      <RadioValue code="5100" />
+    </SubCommand>
+  </Command>
+  <Command code="1A" name="Div" subCommands="Yes" ReadFrom="1A" FixedSize="0">
+    <SubCommand code="03" PreFix="03">
+      <RadioValue code="0334" />
+    </SubCommand>
+    <SubCommand code="050125" PreFix="050125">
+      <RadioValue code="0501250034" />
+    </SubCommand>
+    <SubCommand code="050126" PreFix="050126">
+      <RadioValue code="0501260029" />
+    </SubCommand>
+    <SubCommand code="050127" PreFix="050127">
+      <RadioValue code="05012713" />
+    </SubCommand>
+    <SubCommand code="06" PreFix="06">
+      <RadioValue code="0601" />
+    </SubCommand>
+    <SubCommand code="050167" PreFix="050167">
+      <RadioValue code="05016700" />
+    </SubCommand>
+    <SubCommand code="01" PreFix="01">
+      <RadioValue code="010101" />
+    </SubCommand>
+    <SubCommand code="050029" PreFix="050029">
+      <RadioValue code="0500290000" />
+    </SubCommand>
+    <SubCommand code="050013" PreFix="050013">
+      <RadioValue code="05001300" />
+    </SubCommand>
+    <SubCommand code="050087" PreFix="050087">
+      <RadioValue code="0500870025" />
+    </SubCommand>
+    <SubCommand code="050088" PreFix="050088">
+      <RadioValue code="0500880025" />
+    </SubCommand>
+    <SubCommand code="050089" PreFix="050089">
+      <RadioValue code="05008910" />
+    </SubCommand>
+    <SubCommand code="050292" PreFix="050292">
+      <RadioValue code="05029200" />
+    </SubCommand>
+    <SubCommand code="050038" PreFix="050038">
+      <RadioValue code="05003800" />
+    </SubCommand>
+    <SubCommand code="050191" PreFix="050191">
+      <RadioValue code="05019120" />
+    </SubCommand>
+    <SubCommand code="050058" PreFix="050058">
+      <RadioValue code="05005820" />
+    </SubCommand>
+    <SubCommand code="04" PreFix="04">
+      <RadioValue code="0400" />
+    </SubCommand>
+    <SubCommand code="050092" PreFix="050092">
+      <RadioValue code="05009200" />
+    </SubCommand>
+    <SubCommand code="050163" PreFix="050163">
+      <RadioValue code="0501630025" />
+    </SubCommand>
+    <SubCommand code="050164" PreFix="050164">
+      <RadioValue code="0501640025" />
+    </SubCommand>
+    <SubCommand code="050165" PreFix="050165">
+      <RadioValue code="0501650025" />
+    </SubCommand>
+    <SubCommand code="050047" PreFix="050047">
+      <RadioValue code="05004710" />
+    </SubCommand>
+    <SubCommand code="02" PreFix="02">
+      <RadioValue code="0232" />
+    </SubCommand>
+    <SubCommand code="050166" PreFix="050166">
+      <RadioValue code="0501660025" />
+    </SubCommand>
+    <SubCommand code="050010" PreFix="050010">
+      <RadioValue code="0500100025" />
+    </SubCommand>
+  </Command>
+  <Command code="07" name="VFO" subCommands="No" ReadFrom="07" FixedSize="0">
+    <RadioValue code="D0" />
+  </Command>
+  <Command code="0F" name="Split and DUP" subCommands="Yes" ReadFrom="0F" FixedSize="0">
+    <SubCommand code="00" PreFix="00">
+      <RadioValue code="0000" />
+    </SubCommand>
+    <SubCommand code="01" PreFix="01">
+      <RadioValue code="0100" />
+    </SubCommand>
+  </Command>
+  <Command code="1C" name="Div" subCommands="Yes" ReadFrom="1C" FixedSize="0">
+    <SubCommand code="00" PreFix="00">
+      <RadioValue code="0000" />
+    </SubCommand>
+    <SubCommand code="01" PreFix="00">
+      <RadioValue code="0001" />
+    </SubCommand>
+  </Command>
+  <Command code="14" name="Div" subCommands="Yes" ReadFrom="14" FixedSize="0">
+    <SubCommand code="01" PreFix="01">
+      <RadioValue code="010000" />
+    </SubCommand>
+    <SubCommand code="07" PreFix="07">
+      <RadioValue code="070128" />
+    </SubCommand>
+    <SubCommand code="08" PreFix="08">
+      <RadioValue code="080128" />
+    </SubCommand>
+    <SubCommand code="0A" PreFix="0A">
+      <RadioValue code="0A0082" />
+    </SubCommand>
+    <SubCommand code="0B" PreFix="0B">
+      <RadioValue code="0B0000" />
+    </SubCommand>
+    <SubCommand code="03" PreFix="03">
+      <RadioValue code="030080" />
+    </SubCommand>
+    <SubCommand code="02" PreFix="02">
+      <RadioValue code="020090" />
+    </SubCommand>
+    <SubCommand code="06" PreFix="06">
+      <RadioValue code="060008" />
+    </SubCommand>
+    <SubCommand code="12" PreFix="12">
+      <RadioValue code="120128" />
+    </SubCommand>
+    <SubCommand code="0E" PreFix="0E">
+      <RadioValue code="0E0011" />
+    </SubCommand>
+    <SubCommand code="0D" PreFix="0D">
+      <RadioValue code="0D0255" />
+    </SubCommand>
+    <SubCommand code="09" PreFix="09">
+      <RadioValue code="090176" />
+    </SubCommand>
+    <SubCommand code="0C" PreFix="0C">
+      <RadioValue code="0C0070" />
+    </SubCommand>
+    <SubCommand code="0F" PreFix="0F">
+      <RadioValue code="0F0129" />
+    </SubCommand>
+    <SubCommand code="16" PreFix="16">
+      <RadioValue code="160025" />
+    </SubCommand>
+    <SubCommand code="17" PreFix="17">
+      <RadioValue code="170025" />
+    </SubCommand>
+    <SubCommand code="04" PreFix="04">
+      <RadioValue code="040130" />
+    </SubCommand>
+  </Command>
+  <Command code="11" name="Div" subCommands="No" ReadFrom="11" FixedSize="0">
+    <RadioValue code="00" />
+  </Command>
+  <Command code="15" name="Div" subCommands="Yes" ReadFrom="15" FixedSize="0">
+    <SubCommand code="02" PreFix="02">
+      <RadioValue code="020011" />
+    </SubCommand>
+    <SubCommand code="11" PreFix="11">
+      <RadioValue code="110128" />
+    </SubCommand>
+    <SubCommand code="12" PreFix="12">
+      <RadioValue code="120128" />
+    </SubCommand>
+  </Command>
+  <Command code="25" name="NEW" subCommands="Yes" ReadFrom="25" FixedSize="0">
+    <SubCommand code="00" PreFix="00">
+      <RadioValue code="000000071400" />
+    </SubCommand>
+    <SubCommand code="01" PreFix="01">
+      <RadioValue code="010000070700" />
+    </SubCommand>
+  </Command>
+  <Command code="26" name="NEW" subCommands="Yes" ReadFrom="26" FixedSize="0">
+    <SubCommand code="00" PreFix="00">
+      <RadioValue code="00010101" />
+    </SubCommand>
+    <SubCommand code="01" PreFix="01">
+      <RadioValue code="01130000" />
+    </SubCommand>
+  </Command>
+</hamradio>
