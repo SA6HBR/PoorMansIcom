@@ -8,7 +8,7 @@ A simple program that behaves like a Icom-radio
 
 ## Useful Links
 
-* [Download latest SerialProxy.exe](https://github.com/SA6HBR/SerialProxy/releases/download/0.01/SerialProxy.exe)
+* [Download latest PoorMansIcom.exe and PoorMansIcom.xml](https://github.com/SA6HBR/PoorMansIcom/releases/tag/0.01)
 * [Manual](https://github.com/SA6HBR/PoorMansIcom/blob/main/doc/PoorMansIcomManual.pdf)
 * [Null-modem emulator (com0com)](https://sourceforge.net/projects/com0com/)
 * [MiKTeX is a modern TeX distribution for Windows](https://miktex.org/)
