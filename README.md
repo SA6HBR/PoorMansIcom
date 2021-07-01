@@ -8,7 +8,7 @@ A simple program that behaves like a Icom-radio
 
 ## Useful Links
 
-* [Download latest PoorMansIcom.exe and PoorMansIcom.xml](https://github.com/SA6HBR/PoorMansIcom/releases/tag/0.01)
+* [Download latest (0.01) PoorMansIcom.exe and PoorMansIcom.xml](https://github.com/SA6HBR/PoorMansIcom/releases/tag/0.01)
 * [Manual](https://github.com/SA6HBR/PoorMansIcom/blob/main/doc/PoorMansIcomManual.pdf)
 * [Null-modem emulator (com0com)](https://sourceforge.net/projects/com0com/)
 * [MiKTeX](https://miktex.org/)
